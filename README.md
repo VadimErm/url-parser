@@ -1,4 +1,9 @@
 # url-parser
+Установка
+Склонировать репозиторий
+composer install
+Создать в корне приложения папку reports
+
 Парсинг url: php index.php parse url </br>
 Получить отчет по домену: php index.php report domain </br>
 Help : php index.php help </br>
