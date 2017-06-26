@@ -1,9 +1,15 @@
+#!/usr/bin/env php
 <?php
 
 $loader = require_once __DIR__.'/vendor/autoload.php';
 
 use \App\Engine\Parser;
 
+$dir = __DIR__."/reports";
+
+if (!is_dir($dir)) {
+    mkdir($dir);
+}
 
 if ( $argc > 1 ) {
     switch ($argv[1]){
@@ -28,6 +34,8 @@ if ( $argc > 1 ) {
 
                $arg = trim($argv[2]);
                $parser = new Parser();
+               echo "Parsing...\n";
+               echo "Wait a few minutes\n";
                $parser->parser($arg);
 
            } else {

@@ -54,7 +54,7 @@ class Parser
                 }
 
                 if($this->SaveToJson($response, $content['host']) && $fileName = $this->SaveToCsv($response, $content['host'])  ){
-                    echo "Path to the csv file: ". $fileName."\n";
+                    echo "Path to  csv file: ". $fileName."\n";
                 } else {
                     echo "Error\n";
                 }
