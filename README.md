@@ -1,7 +1,7 @@
 # url-parser
-Установка
-Склонировать репозиторий
-composer install
+Установка:</br>
+Склонировать репозиторий</br>
+composer install</br>
 
 
 Парсинг url: php index.php parse url </br>
