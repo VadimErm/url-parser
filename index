@@ -14,9 +14,9 @@ if (!is_dir($dir)) {
 if ( $argc > 1 ) {
     switch ($argv[1]){
         case 'help':
-            echo "parse <url> - parsing current url adn return path to csv file\n";
-            echo "report <domain> - get report for domain if exist\n";
-            echo "help - help information\n";
+            echo "php index parse <url> - parsing current url adn return path to csv file\n";
+            echo "php index report <domain> - get report for domain if exist\n";
+            echo "php index help - help information\n";
             break;
         case  'report':
             if(isset($argv[2])){
